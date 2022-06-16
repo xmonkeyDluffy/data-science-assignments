@@ -1,0 +1,21 @@
+students_data={}
+i=0
+while(i>=0):
+	student=[]
+	rollno=input()
+	name=input()
+	ssc_marks=int(input())
+	inter_marks=int(input())
+	cgpa=float(input())
+	programming_language_preferred=input().split(" ")
+	career_options=input()
+	student.append(rollno)
+	student.append(name)
+	student.append(ssc_marks)
+	student.append(inter_marks)
+	student.append(cgpa)
+	student.append(programming_language_preferred)
+	student.append(career_options)
+	students_data.update({rollno:student})
+	i=i-1
+print(students_data)
